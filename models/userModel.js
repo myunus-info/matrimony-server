@@ -36,7 +36,7 @@ const userSchema = new mongoose.Schema({
   },
 
   phone: {
-    type: Number,
+    type: String,
     required: [true, 'Please provide your phone number!'],
     minlength: [11, 'Phone number must be at least 11 characters long!'],
   },
@@ -51,7 +51,7 @@ const userSchema = new mongoose.Schema({
   },
 
   age: {
-    type: Number,
+    type: String,
     required: [true, 'Please mention your age!'],
   },
 });
