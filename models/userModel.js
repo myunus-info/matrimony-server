@@ -54,6 +54,13 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Please mention your age!'],
   },
+  NID: String,
+  weight: String,
+  height: String,
+  religion: String,
+  sect: String,
+  maritalStatus: String,
+  aboutYourself: String,
 });
 
 userSchema.pre('save', async function (next) {
